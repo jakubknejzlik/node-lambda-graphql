@@ -1,6 +1,8 @@
 # node-lambda-graphql
 AWS Lambda graphql handler
 
+[![Build Status](https://travis-ci.org/jakubknejzlik/node-lambda-graphql.svg?branch=master)](https://travis-ci.org/jakubknejzlik/node-lambda-graphql)
+
 # Installation
 
 ```npm install --save lambda-graphql```
@@ -33,6 +35,7 @@ const root = {
   }
 }
 
+// options passed to lambdaGraphql() are the same as options for express-graphql module
 exports.handler = lambdaGraphql({
   schema: schema,
   rootValue: root
