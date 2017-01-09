@@ -2,6 +2,7 @@
   "name": "lambda-graphql",
   "description": "AWS Lambda graphql handler",
   "version": "0.1.1",
+  "license": "MIT",
   "dependencies": {
     "aws-serverless-express": "^1.2.0",
     "express": "^4.14.0",
@@ -13,5 +14,17 @@
   },
   "devDependencies": {
     "mocha": "^3.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jakubknejzlik/node-lambda-graphql.git"
+  },
+  "keywords": [
+    "lambda",
+    "graphql",
+    "aws",
+    "amazon",
+    "middleware",
+    "api"
+  ]
 }
