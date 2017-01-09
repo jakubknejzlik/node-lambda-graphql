@@ -1,7 +1,7 @@
 {
   "name": "lambda-graphql",
   "description": "AWS Lambda graphql handler",
-  "version": "0.1.3",
+  "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
     "aws-serverless-express": "^1.2.0",
