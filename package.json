@@ -1,0 +1,16 @@
+{
+  "name": "lambda-graphql",
+  "description": "AWS Lambda graphql handler",
+  "version": "0.0.1",
+  "dependencies": {
+    "aws-serverless-express": "^1.2.0",
+    "express": "^4.14.0",
+    "express-graphql": "^0.6.1"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  }
+}
