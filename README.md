@@ -9,7 +9,7 @@ AWS Lambda graphql handler
 
 1) create AWS Lambda function
 
-2) install lambda-graphql module and create index.js...for example:
+2) install `lambda-graphql` module and create `index.js`...for example:
 
 ```
 'use strict'
