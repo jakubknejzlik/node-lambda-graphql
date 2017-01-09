@@ -7,14 +7,17 @@ AWS Lambda graphql handler
 
 # Usage
 
-1) create AWS Lambda function
+1) create Lambda function in AWS console
 
-2) install `lambda-graphql` module and create `index.js`...for example:
+2) install `lambda-graphql` and `graphql` modules
+
+```npm install --save lambda-graphql graphql```
+
+3) create `index.js`...for example:
 
 ```
 'use strict'
 
-const assert = require('assert')
 const graphql = require('graphql')
 const lambdaGraphql = require('lambda-graphql')
 
@@ -25,7 +28,7 @@ const schema = graphql.buildSchema(`
 `)
 
 const root = {
-  hello: function(params) => {
+  hello: function(params) {
     return 'world'
   }
 }
