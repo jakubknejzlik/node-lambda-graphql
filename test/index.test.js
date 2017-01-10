@@ -12,7 +12,7 @@ const schema = graphql.buildSchema(`
 
 const root = { hello: (params) => 'Hello world! ' + (params.foo || '') }
 
-const handler = lambdaGraphql({
+const app = lambdaGraphql({
   schema: schema,
   rootValue: root
 })
@@ -27,7 +27,7 @@ describe('handler', () => {
         variables: '{"blah":"test"}'
       }
     }
-    handler(event,{
+    app.handler(event,{
       succeed: (result) => {
         assert.equal(result.statusCode,200)
         let body = JSON.parse(result.body)
