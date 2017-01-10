@@ -11,11 +11,11 @@ module.exports = (options) => {
 
   let server = awsServerlessExpress.createServer(app)
 
-  process.on('exit',() => {
-    server.close()
-  })
-
-  return (event, context) => {
-    return awsServerlessExpress.proxy(server, event, context)
+  return {
+    handler: (event, context) => {
+      return awsServerlessExpress.proxy(server, event, context)
+    },close: () => {
+      server.close()
+    }
   }
 }

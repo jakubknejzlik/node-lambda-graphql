@@ -36,10 +36,19 @@ const root = {
 }
 
 // options passed to lambdaGraphql() are the same as options for express-graphql module
-exports.handler = lambdaGraphql({
+let app = lambdaGraphql({
   schema: schema,
   rootValue: root
 })
+
+// pass handler as `index.handler` for aws lambda
+exports.handler = app.handler
+
+// shutdown gracefully (process in container is stopped before going to "sleep")
+process.on('exit',() => {
+  app.close()
+})
+process.on('SIGINT',process.exit)
 ```
 
 3) deploy function by uploading to AWS Lambda
