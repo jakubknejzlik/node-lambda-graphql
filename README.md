@@ -51,6 +51,6 @@ process.on('exit',() => {
 process.on('SIGINT',process.exit)
 ```
 
-3) deploy function by uploading to AWS Lambda
+4) deploy function by uploading to AWS Lambda
 
-4) setup AWS Gateway API with proxy resource (for example /graphql) and forward requests (`GET` and `POST` methods) to created lambda function
+5) setup AWS Gateway API with proxy resource (for example /graphql) and forward requests (`GET` and `POST` methods) to created lambda function
