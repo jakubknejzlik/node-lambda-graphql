@@ -563,9 +563,9 @@ global-prefix@^1.0.1:
     is-windows "^1.0.1"
     which "^1.2.14"
 
-graphql@^14.1.1:
-  version "14.1.1"
-  resolved "http://dev-tools-elb-837489274.us-east-1.elb.amazonaws.com:4873/graphql/-/graphql-14.1.1.tgz#d5d77df4b19ef41538d7215d1e7a28834619fac0"
+graphql@14.0.2:
+  version "14.0.2"
+  resolved "http://dev-tools-elb-837489274.us-east-1.elb.amazonaws.com:4873/graphql/-/graphql-14.0.2.tgz#7dded337a4c3fd2d075692323384034b357f5650"
   dependencies:
     iterall "^1.2.2"
 
