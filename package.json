@@ -3,17 +3,18 @@
   "description": "AWS Lambda graphql handler",
   "version": "1.1.0",
   "license": "MIT",
-  "dependencies": {
-    "aws-serverless-express": "^1.2.0",
-    "express": "^4.14.0",
-    "express-graphql": "^0.6.1"
-  },
   "scripts": {
     "test": "mocha test"
   },
+  "dependencies": {
+    "aws-serverless-express": "^3.3.5",
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "cors": "^2.8.5"
+  },
   "devDependencies": {
-    "mocha": "^3.2.0",
-    "graphql": "^0.8.2"
+    "mocha": "^6.0.2",
+    "graphql": "^14.1.1"
   },
   "repository": {
     "type": "git",
