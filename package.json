@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "mocha": "^6.0.2",
-    "graphql": "14.0.2"
+    "graphql": "^14.1.1"
   },
   "repository": {
     "type": "git",
